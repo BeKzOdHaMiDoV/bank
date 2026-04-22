@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_db
+    username: postgres
+    password: 1
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+jwt:
+  secret: MySuperSecretKeyForJWTTokenGeneration1234567890!
+  expiration: 86400000
+
+telegram:
+  bot:
+    token: 8453672232:AAF3Hz_NN0Fjvra4TLb3GUjjlNg9P_2ZMeg
+    username: myfoodshop_test_bot
+    api-secret: dev-secret-key-123
